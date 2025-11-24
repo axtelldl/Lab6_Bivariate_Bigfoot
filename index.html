@@ -78,7 +78,7 @@ for (i = 0; i < 3; i++) {
     $('head').append($("<style> .marker-color-" + (i + 1).toString() + " { color: " + colors[i] + "; font-size: 15px; text-shadow: 0 0 3px #ffffff;} </style>"));
 }
 
-NCDOTsightingsjoinedc = L.geoJson.ajax("assests/NCDOTsightingsjoinedc.geojson", {
+NCDOTsightingsjoinedc = L.geoJson.ajax("assets/NCDOTsightingsjoinedc.geojson", {
 
 onEachFeature: function (feature, layer) {
       layer.bindPopup(feature.properties.cryptid_sightings);
@@ -162,4 +162,5 @@ L.control.scale({position: 'bottomleft'}).addTo(mymap);
 
 </script>
 </body>
+
 </html>
